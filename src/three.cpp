@@ -101,7 +101,7 @@ Three::~Three() noexcept {
     delete[] _array;
 }
 
-Three Three::add(const Three& other)
+Three Three::add(const Three& other) const
 {
     size_t result_size = std::max(_size, other._size);
     unsigned char* result_array = new unsigned char[result_size + 1];
@@ -131,7 +131,7 @@ Three Three::add(const Three& other)
     return result;
 }
 
-Three Three::subtract(const Three& other)
+Three Three::subtract(const Three& other) const
 {
     if (this->lessThan(other)) {
         throw std::invalid_argument("Результатом вычитания будет отрицательное число.");

@@ -14,8 +14,8 @@ class Three {
         Three(const Three& other);
         Three(Three&& other) noexcept;
 
-        Three add(const Three& other);
-        Three subtract(const Three& other);
+        Three add(const Three& other) const;
+        Three subtract(const Three& other) const;
 
         bool greaterThan(const Three& other) const;
         bool lessThan(const Three& other) const;

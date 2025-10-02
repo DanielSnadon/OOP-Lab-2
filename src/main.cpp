@@ -11,6 +11,10 @@ int main() {
         Three num4("12");
         Three num5 = num3.add(num4);
         Three num6 = num3.subtract(num4);
+
+        // Three num2 = num3;
+        // Three num3 = num3.add(num4);
+        // Three num3 = num3.subtract(num4);
     
         std::cout << "Num1: ";
         num1.print(std::cout) << std::endl;
